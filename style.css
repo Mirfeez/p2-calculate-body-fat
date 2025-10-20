@@ -11,16 +11,36 @@ body {
   border-radius: 2rem;
 }
 
-header a{
-  font-size: 2rem;
-  color:white;
-  text-decoration-line: none;
-  margin: 1rem;
+
+header {
+  margin-top: 20px;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
-header p:hover{
-  box-shadow: 0 0 25px white;
+.logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-decoration-line: none;
+
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: #00c3ff;
+  text-shadow: 0 0 5px #00c3ff;
 }
 
 h2 {
