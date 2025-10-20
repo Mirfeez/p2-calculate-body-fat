@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>body fat percentage calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <section>
+
+    <div class="female">
+      <h2>Male</h2>
+      <div class="age inputs">
+        <label for="ageInputMale">Age:</label><br>
+        <input id="ageInputMale" type="number" placeholder="0">
+      </div>
+
+      <div class="weight inputs">
+        <label for="weightInputMale">Body Weight:</label><br>
+        <input id="weightInputMale" type="number" placeholder="kg">
+      </div>
+
+      <div class="height inputs">
+        <label for="heightInputMale">Body Height(cm):</label><br>
+        <input id="heightInputMale" type="number" placeholder="cm">
+      </div>
+
+      <div class="waist inputs">
+        <label for="waistInputMale">Waist size(cm):</label><br>
+        <input type="number" id="waistInputMale" placeholder="cm">
+      </div>
+
+      <div class="neck inputs">
+        <label for="neckInputMale">Neck size(cm):</label><br>
+        <input type="number" id="neckInputMale" placeholder="cm">
+      </div>
+
+      <div class="button">
+        <button class="button1" onclick="submitMale()">Submit</button>
+      </div>
+
+    </div>
+
+
+
+    <div class="female">
+      <h2>Female</h2>
+      <div class="age inputs">
+        <label for="ageInputFemale">Age:</label><br>
+        <input id="ageInputFemale" type="number" placeholder="0">
+      </div>
+
+      <div class="weight inputs">
+        <label for="weightInputFemale">Body Weight:</label><br>
+        <input id="weightInputFemale" type="number" placeholder="kg">
+      </div>
+
+      <div class="height inputs">
+        <label for="heightInputFemale">Body Height(cm):</label><br>
+        <input id="heightInputFemale" type="number" placeholder="cm">
+      </div>
+
+      <div class="waist inputs">
+        <label for="waistInputFemale">Waist size(cm):</label><br>
+        <input type="number" id="waistInputFemale" placeholder="cm">
+      </div>
+
+      <div class="neck inputs">
+        <label for="neckInputFemale">Neck size(cm):</label><br>
+        <input type="number" id="neckInputFemale" placeholder="cm">
+      </div>
+
+      <div class="hips inputs">
+        <label for="hipsInputFemale">hips size(cm):</label><br>
+        <input type="number" id="hipsInputFemale" placeholder="cm">
+      </div>
+
+      <div class="button">
+        <button class="button2" onclick="submitFemale()">Submit</button>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <div class="display">
+    <h3 id="tell"></h3>
+    <table>
+      <tr>
+        <th>Your Body Fat is:</th>
+        <th>BMI Method</th>
+        <th>US Navy Method</th>
+        <th>Average</th>
+      </tr>
+      <tr>
+        <th>Body fat %</th>
+        <td id="bmiOutput"></td>
+        <td id="usOutput"></td>
+        <td id="average"></td>
+      </tr>
+      <tr>
+        <th>Body Fat (kg)</th>
+        <td id="fatweightbmi"></td>
+        <td id="fatweightus"></td>
+        <td id="fatweightaverage"></td>
+      </tr>
+      <tr>
+        <th>Body actual weight</th>
+        <td id="weightbmi"></td>
+        <td id="weightus"></td>
+        <td id="weightaverage"></td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Men</th>
+        <th>Women</th>
+        <th>Appereance</th>
+      </tr>
+      <tr>
+        <td>Essential Fat</td>
+        <td>2-5%</td>
+        <td>10-13%</td>
+        <td>Extremely shredded; veins and muscle striations visible; abs fully visible but unhealthy to maintain long
+          term.</td>
+      </tr>
+      <tr>
+        <td>Athletes</td>
+        <td>6-13%</td>
+        <td>14-20%</td>
+        <td>Very fit; defined abs visible; strong and toned physique (common in professional athletes).</td>
+      </tr>
+      <tr>
+        <td>Fitness</td>
+        <td>14-17%</td>
+        <td>21-24%</td>
+        <td>Lean and healthy look; abs partially visible; slight muscle definition.</td>
+      </tr>
+      <tr>
+        <td>Average</td>
+        <td>18-24%</td>
+        <td>25-31%</td>
+        <td>Normal healthy body; stomach may be flat but abs not visible.</td>
+      </tr>
+      <tr>
+        <td>Obese</td>
+        <td>25%+</td>
+        <td>32%+</td>
+        <td>Belly fat and soft appearance; no ab visibility; increased health risk.</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</body>
+
+</html>
