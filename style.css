@@ -11,8 +11,21 @@ body {
   border-radius: 2rem;
 }
 
+header a{
+  font-size: 2rem;
+  color:white;
+  text-decoration-line: none;
+  margin: 1rem;
+  position: fixed;
+}
+
+header p:hover{
+  box-shadow: 0 0 25px white;
+}
+
 h2 {
   margin: 2rem 0 0 2rem;
+
 }
 
 section {
