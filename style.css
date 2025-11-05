@@ -1,7 +1,10 @@
-
 body {
-  background: linear-gradient(to left, rgb(105, 0, 93), rgb(1, 68, 113));
+  background: linear-gradient(to right, black, rgb(65, 65, 65));
   color: white;
+}
+
+html,body {
+  width: 100vw;
 }
 
 .male,
@@ -10,16 +13,15 @@ body {
   height: 100%;
   width: 15rem;
   border-radius: 2rem;
-  border: 5px solid white;
+  border: 3px solid white;
 }
 
 header {
-  margin-top: 20px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 1rem;
   background-color: transparent;
   filter: drop-shadow(10px);
   display: flex;
@@ -81,26 +83,22 @@ button {
   border: 1px solid white;
 }
 
-.button1:hover {
-  background-color: black;
-  color: white;
-  box-shadow: 0 0 5px white;
-  transition: box-shadow, background-color 500ms;
-}
+.button1:hover,
 .button2:hover {
-  background-color: black;
-  color: white;
-  box-shadow: 0 0 5px white;
-  transition: box-shadow, background-color 500ms;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 15px white;
+  transition: all  1000ms;
 }
+
 
 table {
   border: 1px solid white;
   border-collapse: collapse;
   padding: 5px;
   text-align: center;
-  width: 100%;
   margin-bottom: 4rem;
+  justify-self: center;
 }
 
 th,
@@ -111,8 +109,7 @@ td {
 th,
 td {
   padding: 12px 20px;
-  font-size: 1.1rem;
-  min-width: 140px;
+  font-size: 1rem;
   height: 64px;
   vertical-align: middle;
 }
@@ -135,4 +132,71 @@ table {
   background-color: transparent;
   width: 100%;
   height: 100%;
+}
+
+.result {
+  width: ;
+}
+
+@media (max-width: 735px) {
+  .male {
+    height: 29rem;
+    width: 13rem;
+    border-radius: 1.5rem;
+    border: 2px solid white;
+  }
+  .female {
+    height: 34rem;
+    width: 13rem;
+    border-radius: 1.5rem;
+    border: 2px solid white;
+  }
+
+  .male h2,
+  .female h2 {
+    margin: 1rem 0 0;
+  }
+
+  .gender {
+    margin: 0;
+  }
+}
+@media (max-width: 735px) {
+  .male {
+    height: 22rem;
+    width: 10rem;
+    border-radius: 1.5rem;
+    border: 1.5px solid white;
+    font-size: 0.8rem;
+  }
+  .female {
+    height: 25rem;
+    width: 10rem;
+    border-radius: 1.5rem;
+    border: 1.5px solid white;
+    font-size: 0.8rem;
+  }
+
+  .gender {
+    margin: 0.5rem;
+  }
+
+  input {
+    height: 0.5rem;
+  }
+
+  .inputs{
+    margin: 0.5rem;
+  padding: 0.5rem;
+  }
+
+  .male h2,
+  .female h2 {
+    font-size: 1rem;
+  }
+
+  .display table tr th,
+  .display table tr td{
+    font-size: 0.5rem;
+  }
 }
